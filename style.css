@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: sans-serif;
+  background-color: #0e4d1b;
+  color: white;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #123c15;
+  padding: 20px;
+  border-right: 4px solid #fff;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.sidebar select, .sidebar input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #2ecc71;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.player-list {
+  background-color: #1c5e28;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.player {
+  background-color: #2ecc71;
+  color: black;
+  padding: 6px;
+  margin: 4px 0;
+  border-radius: 4px;
+  cursor: grab;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.field {
+  position: relative;
+  width: 600px;
+  height: 900px;
+  background-color: #1e7a2e;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.goal {
+  width: 100px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.goal.top { top: 0; }
+.goal.bottom { bottom: 0; }
+
+.penalty-box {
+  width: 300px;
+  height: 100px;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.penalty-box.top { top: 0; }
+.penalty-box.bottom { bottom: 0; }
+
+.center-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.half-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-1px);
+}
+
+.draggable-player {
+  position: absolute;
+  background-color: #3498db;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: move;
+  user-select: none;
+  font-weight: bold;
+}

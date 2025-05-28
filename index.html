@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>전술 보드</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="sidebar">
+    <h2>축구 포메이션 사이트</h2>
+    <h2>KH FC</h2>
+    <h2>전술 설정</h2>
+
+    <label>포메이션</label>
+    <select>
+      <option>4-3-3</option>
+      <option>4-4-2</option>
+      <option>4-5-1</option>
+      <option>4-2-3-1</option>
+      <option>4-2-2-2</option>
+      <option>3-5-2</option>
+      <option>3-4-3</option>
+      <option>3-4-2-1</option>
+    </select>
+
+    <label>전술 유형</label>
+    <select>
+      <option>점유율 중시</option>
+      <option>게겐프레스</option>
+      <option>티키타카</option>
+      <option>전진 티키타카</option>
+      <option>빠른 역습</option>
+      <option>카테나치오</option>
+      <option>버스 세우기</option>
+    </select>
+
+    <label>압박 성향</label>
+    <select>
+      <option>극단적 수비형</option>
+      <option>수비형</option>
+      <option>신중형</option>
+      <option>일반형</option>
+      <option>지배형</option>
+      <option>공격형</option>
+      <option>극단적 공격형</option>
+    </select>
+
+    <label>선수 이름</label>
+    <input type="text" name="playerName" placeholder="이름 입력">
+
+    <label>포지션</label>
+    <select name="playerPosition">
+      <option value="ST">ST</option>
+      <option value="LW">LW</option>
+      <option value="RW">RW</option>
+      <option value="AM">AM</option>
+      <option value="CM">CM</option>
+      <option value="CDM">CDM</option>
+      <option value="CB">CB</option>
+      <option value="LB">LB</option>
+      <option value="RB">RB</option>
+      <option value="GK">GK</option>
+    </select>
+
+    <label>주발</label>
+    <select name="preferredFoot">
+      <option value="왼발">왼발</option>
+      <option value="오른발">오른발</option>
+      <option value="양발">양발</option>
+    </select>
+
+    <button onclick="addPlayer()">추가</button>
+
+    <div class="player-list" id="playerList">
+      <h4>등록된 선수</h4>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="field" id="field">
+      <div class="goal top"></div>
+      <div class="goal bottom"></div>
+      <div class="penalty-box top"></div>
+      <div class="penalty-box bottom"></div>
+      <div class="half-line"></div>
+      <div class="center-circle"></div>
+    </div>
+  </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
